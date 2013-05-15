@@ -1,13 +1,16 @@
 
+* {margin:0;padding:0;} 
+html {
+  height: 100%;
+}
 body {
   font-family: 'Average Sans', sans-serif;
-  margin: 3px;
   background: url(../img/bg.png);
+  margin: 0;
+  height: 100% !important;
 }
 
 #header {
-  width: 1000px;
-  margin: 0 auto;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -35,12 +38,30 @@ body {
 }
 
 #wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+
+}
+
+#content {
   width: 800px;
   margin: 0 auto;
-  min-height: 600px;
   background: #fff;
+  padding-bottom: 90px;
+  overflow: auto;
 }
 
 footer {
   text-align: center;
+}
+
+#footer {
+  background: url(../img/bottom.jpg);
+  height: 90px;
+  margin-top: -90px;
+  position: relative;
+  clear: both;
 }
