@@ -1,0 +1,38 @@
+
+body {
+  font-family: 'Average Sans', sans-serif;
+  margin: 3px;
+  background: url(../img/bg.png);
+}
+
+#header {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#header ul {
+  list-style-type: none;
+  background: url(../img/film.png);
+  width: 714px;
+  height: 101px;
+  display: inline-block;
+  padding-left: 0px;
+}
+
+#header ul li {
+  float: left;
+  padding: 20px 40px;
+  font-size: 40px;
+  color: white;
+}
+
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+  min-height: 600px;
+  background: #fff;
+}
+
+footer {
+  text-align: center;
+}
