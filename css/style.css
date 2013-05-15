@@ -8,6 +8,7 @@ body {
 #header {
   width: 1000px;
   margin: 0 auto;
+  font-family: 'Economica', sans-serif;
 }
 
 #header ul {
@@ -24,6 +25,7 @@ body {
   padding: 20px 40px;
   font-size: 40px;
   color: white;
+  font-weight: bold;
 }
 
 #wrapper {
