@@ -18,15 +18,20 @@ body {
   height: 101px;
   display: inline-block;
   padding-left: 0px;
+  margin-left: 15px;
 }
 
 #header ul li {
   float: left;
-  padding: 20px 30px;
+  padding: 27px 30px;
   font-size: 40px;
+}
+
+#header ul li a {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 #wrapper {
