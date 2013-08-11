@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: 'Average Sans', sans-serif;
-  background: url(../img/bg.png);
+  background: url(img/bg.png);
   margin: 0;
   height: 100% !important;
 }
@@ -15,7 +15,7 @@ body {
 
 #header ul {
   list-style-type: none;
-  background: url(../img/film.png);
+  background: url(img/film.png);
   width: 714px;
   height: 101px;
   display: inline-block;
@@ -58,7 +58,7 @@ footer {
 }
 
 #footer {
-  background: url(../img/bottom.jpg);
+  background: url(img/bottom.jpg);
   height: 90px;
   margin-top: -90px;
   position: relative;
