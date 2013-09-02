@@ -6,7 +6,7 @@ body {
   font-family: 'Average Sans', sans-serif;
   background: url(img/bg.png);
   margin: 0;
-  height: 100% !important;
+  /*height: 100% !important;
 }
 
 #header {
