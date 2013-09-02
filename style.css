@@ -1,8 +1,15 @@
+<<<<<<< HEAD:css/style.css
 
 * {margin:0;padding:0;} 
+=======
+* {margin:0;padding:0;}
+html {
+  height: 100%;
+}
+>>>>>>> origin:style.css
 body {
   font-family: 'Average Sans', sans-serif;
-  background: url(../img/bg.png);
+  background: url(img/bg.png);
   margin: 0;
   height: 100%;
 }
@@ -13,7 +20,7 @@ body {
 
 #header ul {
   list-style-type: none;
-  background: url(../img/film.png);
+  background: url(img/film.png);
   width: 714px;
   height: 101px;
   display: inline-block;
@@ -55,7 +62,7 @@ footer {
 }
 
 #footer {
-  background: url(../img/bottom.jpg);
+  background: url(img/bottom.jpg);
   height: 90px;
   position: relative;
   bottom: 0px;
