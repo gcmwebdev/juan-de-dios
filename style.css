@@ -6,23 +6,33 @@ src: url(fonts/Oswald-light.ttf);
 }
 html,body{width:100%;height:100%;}
 body {background-color:black;
-		background-image: url(img/texturay.jpg);
+		background-image: url(img/texturay.jpg) ;
 		background-attachment:fixed;
+		/* gradient radial*/
+		/* CSS */
+
+/*background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 201, color-stop(0%, #ffffff), color-stop(100%, transparent)), url(img/texturay.jpg);*/
+background-image: -webkit-radial-gradient(center center, closest-side circle, #ffffff 0%, black 100%), url(img/texturay.jpg);
+/*background-image: -moz-radial-gradient(center center, closest-side circle, #ffffff 0%, transparent 100%), url(img/texturay.jpg);*/
+background-image: -ms-radial-gradient(center center, closest-side circle, #ffffff 0%, transparent 100%), url(img/texturay.jpg);
+background-image: -o-radial-gradient(center center, closest-side circle, #ffffff 0%, transparent 100%), url(img/texturay.jpg);
+background-image: radial-gradient(closest-side circle at 40% center, rgba(255,255,255,0.8) 0%, transparent 100%), url(img/texturay.jpg);
+
+
 				
 		}
-#wrapper {background-color:rgba(255,0,0,0.5);
+#wrapper {
 		min-width: 800px;
 		max-width:1200px;
 		margin: 0 auto ;
 		height:100%;
 		-moz-box-sizing:border-box;
-		
+		padding: 150px 50px 150px;
 		
 		
 			}
-#content { padding: 150px 50px 150px;
-		   background-color:yellow;
-		  opacity:0.5;
+#content { 
+		   background-color: rgba(100,100,100,0.33);
 		  min-height:100%;
 		  -moz-box-sizing:border-box;
 		  
@@ -94,7 +104,7 @@ body {background-color:black;
 #header ul a:hover{background-color:rgba(0,0,0,0.5)}			
 #header ul li{float:left;
 			width:14%;
-			font-size: 3.2em;
+			font-size: 3.0em;
 			text-align:center;
 			}
 #header li:nth-child(2){width:26%}
