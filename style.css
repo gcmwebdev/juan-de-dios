@@ -4,8 +4,31 @@ body {background-color:black;
 		background-image: url(img/texturay.jpg);
 				
 		}
-#wrapper {background-color:red;
+#wrapper {background-color:rgba(255,0,0,0.5);
 		min-width: 800px;
 		max-width:1200px;
-		margin: 0 auto;
+		margin: 0 auto ;
+		height:100%;
+		-moz-box-sizing:border-box;
+		
+		
+		
 			}
+#content { padding: 150px 50px 150px;
+		   background-color:yellow;
+		  opacity:0.5;
+		  min-height:100%;
+		  -moz-box-sizing:border-box;
+		  
+			
+			}
+#header { position:fixed;
+		  top:0;
+		  height:150px;
+		  width:100%;
+		  z-index:1;
+
+			}
+#footer {position:fixed;
+		bottom:0;
+		left:0;}
