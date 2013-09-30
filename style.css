@@ -1,72 +1,11 @@
-<<<<<<< HEAD:css/style.css
-
-* {margin:0;padding:0;} 
-=======
-* {margin:0;padding:0;}
-html {
-  height: 100%;
-}
->>>>>>> origin:style.css
-body {
-  font-family: 'Average Sans', sans-serif;
-  background: url(img/bg.png);
-  margin: 0;
-  height: 100%;
-}
-
-#header {
-  font-family: 'Oxygen',   sans-serif;
-}
-
-#header ul {
-  list-style-type: none;
-  background: url(img/film.png);
-  width: 714px;
-  height: 101px;
-  display: inline-block;
-  padding-left: 0px;
-  margin-left: 15px;
-}
-
-#header ul li {
-  float: left;
-  padding: 27px 30px;
-  font-size: 40px;
-}
-
-#header ul li a {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#wrapper {
-  width: 1000px;
-  margin: 0 auto;
-  min-height: 100%;
-}
-
-#content {
-  width: 800px;
-  margin: 0 auto;
-  background: #fff;
-  overflow: auto;
-  padding-bottom: 90px;
-}
-
-footer {
-  padding-top: 70px;
-  color: white;
-  text-align: center;
-}
-
-#footer {
-  background: url(img/bottom.jpg);
-  height: 90px;
-  position: relative;
-  bottom: 0px;
-  margin-top: -90px;
-  clear: both;
-  width: 100%;
-}
+*{margin:0;padding:0}
+html,body{width:100%;height:100%}
+body {background-color:black;
+		background-image: url(img/texturay.jpg);
+				
+		}
+#wrapper {background-color:red;
+		min-width: 800px;
+		max-width:1200px;
+		margin: 0 auto;
+			}
