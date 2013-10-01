@@ -3,18 +3,18 @@
 @font-face
 {
 font-family: moje;
-src: url(fonts/Oswald-light.ttf);
+src: url(https://raw.github.com/gcmwebdev/juan-de-dios/gh-pages/fonts/Oswald-light.ttf);
 
 }
 @font-face
 {
 font-family: moje-reg;
-src: url(fonts/Oswald-regular.ttf);
+src: url(https://raw.github.com/gcmwebdev/juan-de-dios/gh-pages/fonts/Oswald-Regular.ttf);
 
 }
 html,body{width:100%;height:100%;}
 body {background-color:black;
-		background: url(img/texturay.jpg) repeat-y fixed left top;
+		background: url(img/texturay.jpg)  repeat-x fixed left top;
 		background-size:100%;
 		
 
@@ -37,7 +37,7 @@ body {background-color:black;
 		  min-height:100%;
 		  -moz-box-sizing:border-box;
 		  padding-bottom:100px;
-		  padding:20px;
+		  
 		  margin: 0 50px;
 		  
 		  
@@ -270,6 +270,7 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 /* koniec universal */
 /* uvod zaciatiok*/
 .col{
+padding:20px;
 -moz-column-count:3; /* Firefox */
 -webkit-column-count:3; /* Safari and Chrome */
 column-count:3;
@@ -286,7 +287,10 @@ text-justify:inter-word;
 }
 #content{font-family: arial;
 		font-size: 1.1em;
-		text-align:center;}
+		text-align:center;
+		}
+/*uvod koniec*/
+/*filmy zac*/
 
 
 
