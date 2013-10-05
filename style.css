@@ -312,10 +312,11 @@ text-justify:inter-word;
 				
 				}
 /*ucinkujuci*/
-dt{color:red;
-	line-height:15px;margin-top:10%}
-dd{line-height:15px;}
+dt{color:white;text-shadow: 0 0 10px red;text-decoration: underline;
+	line-height:15px;margin-top:10px}
+dd{line-height:15px;display:inline-block;padding:0 5px ;color:white; text-shadow: 0 0 10px black}
 #content{}
-dl{display:inline-block; width: 33.3333333%; height: 120px; line-height:120px;vertical-align:top;box-shadow:0 0 10px black inset;}
+dl{display:inline-block; width: 33.3333333%; min-height: 150px;vertical-align:top;box-shadow:0 0 10px black inset;position:relative;z-index:0; overflow:hidden}
 dl:nth-child(odd){}
+dl img{position:absolute;left:0;width:100%;z-index:-20;}
 
