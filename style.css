@@ -7,6 +7,7 @@ body {background-color:black;
 		background-size:100%;
 			
 		}
+img{border:0}
 .clear{clear:both;}
 #wrapper {
 		min-width: 800px;
@@ -14,7 +15,7 @@ body {background-color:black;
 		margin: 0 auto ;
 		height:100%;
 		-moz-box-sizing:border-box;
-		padding: 130px 0px 0px;
+		padding: 135px 0px 0px;
 		
 		
 			}
@@ -35,7 +36,7 @@ body {background-color:black;
 		  background-image: url(img/texturay.jpg);
 		  background-position:top left;
 		  background-size:100%;
-		  height:140px;
+		  height:135px;
 		  width: 100%;
 		  z-index:1;
 		  
@@ -47,7 +48,7 @@ body {background-color:black;
 #header { position:fixed;
 		  top:0;
 		  left:50%;
-		  height:150px;
+		  height:135px;
 		  width: 1200px;
 		  z-index:1;
 		  margin-left:-600px;
@@ -295,12 +296,13 @@ text-justify:inter-word;
     -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
     -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
     -webkit-backface-visibility: hidden; /* Fix for transition flickering */
+	border:0;
 
 
 				}
 #content.fotky img:hover{
 
-
+	filter: none; /* IE6-9 */
     -webkit-filter: grayscale(0%);
 }
 /*dab posledna foto*/
@@ -309,3 +311,11 @@ text-justify:inter-word;
 #content.fotky a.none, #content.fotky a.none{width: 25%; position:relative; top: 0px;
 				
 				}
+/*ucinkujuci*/
+dt{color:red;
+	line-height:15px;margin-top:10%}
+dd{line-height:15px;}
+#content{}
+dl{display:inline-block; width: 33.3333333%; height: 120px; line-height:120px;vertical-align:top;box-shadow:0 0 10px black inset;}
+dl:nth-child(odd){}
+
