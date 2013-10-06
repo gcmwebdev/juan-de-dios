@@ -3,7 +3,7 @@
 
 html,body{width:100%;height:100%;}
 body {background-color:black;
-		background: url(img/texturay.jpg)  repeat-x fixed left top;
+		background: url(img/texturay.jpg)  repeat-y fixed left top;
 		background-size:100%;
 			
 		}
