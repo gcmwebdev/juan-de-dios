@@ -352,6 +352,9 @@ column-count:3;
 text-align:justify;
 text-justify:inter-word;
 }
-#hlavicka{padding:10px; }
+#hlavicka{padding:10px;}
+/* odpovedajuci*/
+.col1 p strong.odpo{list-style-type:circle;margin-left:15px}
+.col1  strong.odpo{list-style-type:circle;margin-left:30px}
 
 
