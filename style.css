@@ -250,7 +250,7 @@ img{border:0}
 				top:-30;
 				right: -30px;
 				}*/
-#footer div, #footer div:after, #footer div:before{
+#footer div.gradient, #footer div:after, #footer div:before{
 background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, rgba(255, 247, 247, 0)), color-stop(100%, #ffffff));
 background-image: -webkit-linear-gradient(top, rgba(255, 247, 247, 0) 0%, #ffffff 100%);
 background-image: -moz-linear-gradient(top, rgba(255, 247, 247, 0) 0%, #ffffff 100%);
@@ -279,6 +279,37 @@ text-justify:inter-word;
 		font-size: 1.1em;
 		text-align:center;
 		}
+
+#audio{width:200px; 
+		height:30px;
+		float:right;
+		padding: 0 20px 0 10px;
+		position:relative;
+		text-align:center;
+		margin-right:63px;
+		font-size:1.2em;
+		}		
+#audio_back{position:absolute;
+			width: 44px;
+			height:30px;
+			left:0;
+			top:-5px;
+			background-image:url(img/audio/arrow_left.png);
+			}
+#go{		position:absolute;
+			width: 44px;
+			height:30px;
+			top:-5px;
+			right:0;
+			background-image:url(img/audio/arrow_right.png);
+			}
+#mute     {	position:absolute;
+			width: 50px;
+			height:44px;
+			background-image:url(img/audio/audio.png);
+			right:-60px;
+			bottom:4px;
+			}
 /*uvod koniec*/
 /*fotky zac*/
 
@@ -342,7 +373,7 @@ dl img{position:absolute;left:0;width:100%;z-index:-20;}
 /*ankety konkretne*/
 .col1 strong {display:list-item; margin-top:20px;list-style-type:square;}
 .col1 >strong {margin-left:15px;}
-.col1 strong:first-child{margin-top:0px}
+.col1 strong:first-child{margin-top:0px;}
 .col1 p{margin:0 0px 0 15px;}
 .col1{
 padding:20px;
