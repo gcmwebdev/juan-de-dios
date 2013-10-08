@@ -356,5 +356,6 @@ text-justify:inter-word;
 /* odpovedajuci*/
 .col1 p strong.odpo{list-style-type:circle;margin-left:15px}
 .col1  strong.odpo{list-style-type:circle;margin-left:30px}
-
+.col1  ul {margin-left:30px}
+.col1  ul  li{margin-bottom:10px}
 
