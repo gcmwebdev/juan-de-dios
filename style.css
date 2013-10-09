@@ -390,4 +390,14 @@ text-justify:inter-word;
 .col1  ul {margin-left:30px}
 .col1  ul  li{margin-bottom:10px}
 /*hudba*/
-
+ul#playlist{
+			width:30%;
+			background-color: red;
+			float:right;
+			}
+ul#playlist li {display:block;
+			text-align: left;
+			height:30px;
+			}
+ul#playlist li:nth-child(even){background-color:yellow;}
+ 
