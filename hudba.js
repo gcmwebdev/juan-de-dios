@@ -2,6 +2,8 @@ var hudba=Array(['Boží blázon',"bozi_blazon"],['Granada',"granada"],['Odpust'
 /*insert audio element */
 var mute=0;
 var aktual=0;
+loaded = false,
+manualSeek = false; 
 
 
 function change(sourceUrl) {
@@ -54,8 +56,22 @@ $( document ).ready( function(){
 			document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 			mute=0;
 	        })
-	
-	$('#audio_back').bind('click', function(){
+			p=document.createElement('p');
+			p.innerHTML='<p class="player">\
+				  <span id="playtoggle" class="playtoggle"></span>\
+				  <span id="gutter" class="gutter">\
+					<span id="loading" class="loading"></span>\
+					<span id="handle" class="handle" class="ui-slider-handle" ></span>\
+				  </span>\
+				  <span id="timeleft" class="timeleft"></span>\
+				</p>';
+			
+			loadingIndicator = p.getElementsByClassName('loading')[0];
+			positionIndicator = p.getElementsByClassName('handle')[0];
+			timeleft = p.getElementsByClassName('timeleft')[0];
+			gutter = p.getElementsByClassName('gutter')[0];
+			playtoggle = p.getElementsByClassName('playtoggle')[0];
+			$('#audio_back').bind('click', function(){
 			if(aktual-1==-1){aktual=hudba.length-1;}
 			aktual--;
 			change('audio/'+hudba[aktual][1]);
@@ -63,10 +79,56 @@ $( document ).ready( function(){
 			document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 			mute=0;
 	        })
-		
-	loadingIndicator = $('#loading');
-	positionIndicator = $('.#handle');
-	timeleft = $('#timeleft');
+								$(audio).bind('timeupdate', function() {
+									
+							  var rem = parseInt(audio.duration - audio.currentTime, 10),
+							  pos = (audio.currentTime / audio.duration) * 100,
+							  mins = Math.floor(rem/60,10),
+							  secs = rem - mins*60;
+							  if(pos==100){ 
+										if(aktual+1==hudba.length){aktual=-1;}
+										aktual++;
+										change('audio/'+hudba[aktual][1]);
+										changedesc();
+										document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
+										mute=0;
+										}
+										
+							  timeleft.textContent='-' + mins + ':' + (secs > 9 ? secs : '0' + secs);
+							  if (!manualSeek) { positionIndicator.style.left=pos + '%'; }
+							  if (!loaded) {
+								loaded = true;
+											
+								$(gutter).slider({
+												  value: 0,
+												  step: 0.01,
+												  orientation: "horizontal",
+												  range: "min",
+												  max: audio.duration,
+												  animate: true,					
+												  slide: function() {							
+													manualSeek = true;
+												  },
+												  stop:function(e,ui) {
+													manualSeek = false;					
+													audio.currentTime = ui.value;
+												  }
+												});
+							  }
+
+							});
+$(audio).bind('play',function(){
+$(playtoggle).addClass('playing');document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
+					mute=0;
+});
+$(audio).bind('pause ended', function() {
+$(playtoggle).removeClass('playing');document.getElementById('mute').style.backgroundImage='url(img/audio/noaudio.png)';mute=1;
+});
+$(playtoggle).click(function() {
+if (audio.paused) { audio.play();}
+else { audio.pause(); }
+}); 
+	
 
 	if ((audio.buffered != undefined) && (audio.buffered.length != 0)) {
 	  $(audio).bind('progress', function() {
