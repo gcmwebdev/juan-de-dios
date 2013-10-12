@@ -295,6 +295,7 @@ text-justify:inter-word;
 			left:0;
 			top:-5px;
 			background-image:url(img/audio/arrow_left.png);
+			cursor:pointer;
 			}
 #go{		position:absolute;
 			width: 44px;
@@ -302,6 +303,7 @@ text-justify:inter-word;
 			top:-5px;
 			right:0;
 			background-image:url(img/audio/arrow_right.png);
+			cursor:pointer;
 			}
 #mute     {	position:absolute;
 			width: 50px;
@@ -309,7 +311,9 @@ text-justify:inter-word;
 			background-image:url(img/audio/audio.png);
 			right:-60px;
 			bottom:4px;
+			cursor:pointer;
 			}
+#description{cursor:pointer;}
 /*uvod koniec*/
 /*fotky zac*/
 
@@ -404,19 +408,16 @@ ul#playlist li:nth-child(even){background-color:yellow;}
 .player {
 	display: block;
 	height: 48px;
-	width: 400px;
 	position: relative;
 	
 	-webkit-box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);
 	-moz-box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);
 	-o-box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);
 	box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);
-	border-top: 1px solid #c2cbd4;
-	border-bottom: 1px solid #283541;
+	border-top: 0px solid #c2cbd4;
+	border-bottom: 0px solid #283541;
 	background: #939eaa;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(174, 185, 196, .9)), to(rgba(110, 124, 140, .9)), color-stop(.5, rgba(152, 164, 176, .9)),color-stop(.501, rgba(132, 145, 159, .9)));
-	background: -moz-linear-gradient(top, rgba(174, 185, 196, .9), rgba(152, 164, 176, .9) 50%, rgba(132, 145, 159, .9) 50.1%, rgba(110, 124, 140, .9));
-	background: linear-gradient(top, rgba(174, 185, 196, .9), rgba(152, 164, 176, .9) 50%, rgba(132, 145, 159, .9) 50.1%, rgba(110, 124, 140, .9));
+	background-color:rgba(0,0,0,0.5);
 	cursor: default;
 }
 
@@ -443,6 +444,7 @@ ul#playlist li:nth-child(even){background-color:yellow;}
 	position: absolute;
 	top: 0;
 	right: 0;
+	
 	width: 50px;
 	text-align: center;
 	font-size: 11px;
@@ -452,7 +454,7 @@ ul#playlist li:nth-child(even){background-color:yellow;}
 }
 
 #wrapper #timeleft {
-	right: 40px;
+	right: 0px;
 }
 
 #gutter {
@@ -467,17 +469,17 @@ ul#playlist li:nth-child(even){background-color:yellow;}
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	background: #546374;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#242f3b), to(#516070));
-	background: -moz-linear-gradient(top, #242f3b, #516070);
-	background: linear-gradient(top, #242f3b, #516070);
-	-webkit-box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
-	-moz-box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
-	-o-box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
-	box-shadow: 0 1px 4px rgba(20, 30, 40, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#242f3b), to(rgba(255,255,255,.5)));
+	background: -moz-linear-gradient(top, #242f3b, rgba(255,255,255,.5));
+	background: linear-gradient(top, #242f3b, rgba(255,255,255,.5));
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+	-o-box-shadow: 0 1px 4px rgba(0, 0, 0, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .75) inset, 0 1px 0 rgba(176, 187, 198, .5);
 }
 
 #wrapper #gutter {
-	right: 90px;
+	right: 50px;
 }
 
 #loading {
