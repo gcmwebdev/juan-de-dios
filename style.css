@@ -28,6 +28,7 @@ img{border:0}
 		  margin: 0 50px;
 		  
 		  
+		  
 			
 			}
 #content[white=no]{ background-color: transparent;}
@@ -395,20 +396,52 @@ text-justify:inter-word;
 .col1  ul  li{margin-bottom:10px}
 /*hudba*/
 ul#playlist{
-			width:30%;
-			background-color: red;
+			width:33.3333%;
+			
 			float:right;
+			position:relative;
 			}
 ul#playlist li {display:block;
 			text-align: left;
-			height:30px;
+			
+			background-color:rgba(0,0,0,0.5);color:white;
+			padding:10px;
+			cursor:pointer;
 			}
-ul#playlist li:nth-child(even){background-color:yellow;}
+ul#playlist li:hover #decoration{display:block;}
+ul#playlist li:nth-child(2n){background-color:rgba(255,255,255,0.5);color:black;}
+ul#playlist  a{display:block; float:right;}
+ul#playlist #decoration {width:200%;
+						left:-200%;
+						position:absolute;
+						height:100%;
+						overflow:hidden;
+						top:0;
+						display:none;
+						
+						}
+ul#playlist #decoration  img{width:100%;}
+ul#playlist #decoration  #autor{width:100%; 
+								position:absolute;
+								top:0;
+								color:white;
+								text-align:center;
+								}
+ul#playlist #decoration  #spev{width:80%; 
+								position:absolute;
+								top:30px;
+								color:white;
+								text-align:center;
+								background-color:rgba(255,255,255,0.5);
+								margin:0 10%;
+								border-radius:4px
+								}						
 /*html5 audio laYer*/
 .player {
 	display: block;
 	height: 48px;
 	position: relative;
+	clear:both;
 	
 	-webkit-box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);
 	-moz-box-shadow: 0 -1px 0 rgba(20, 30, 40, .75);

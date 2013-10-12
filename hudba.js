@@ -56,7 +56,7 @@ $( document ).ready( function(){
 			document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 			mute=0;
 	        })
-			p=document.createElement('p');
+			window.p=document.createElement('p');
 			p.innerHTML='<p class="player">\
 				  <span id="playtoggle" class="playtoggle"></span>\
 				  <span id="gutter" class="gutter">\
@@ -92,6 +92,7 @@ $( document ).ready( function(){
 										changedesc();
 										document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 										mute=0;
+																				
 										}
 										
 							  timeleft.textContent='-' + mins + ':' + (secs > 9 ? secs : '0' + secs);
@@ -104,14 +105,14 @@ $( document ).ready( function(){
 												  step: 0.01,
 												  orientation: "horizontal",
 												  range: "min",
-												  max: audio.duration,
+												  max: 100, 
 												  animate: true,					
 												  slide: function() {							
 													manualSeek = true;
 												  },
 												  stop:function(e,ui) {
 													manualSeek = false;					
-													audio.currentTime = ui.value;
+													audio.currentTime = (ui.value/100)*audio.duration;
 												  }
 												});
 							  }

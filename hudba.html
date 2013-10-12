@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <title>Juan de Dios - GCM</title>
   <link href="style.css" rel="stylesheet" type="text/css" media="screen, projection" />
-   <link href='http://fonts.googleapis.com/css?family=Oswald:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-   <link href="css/lightbox.css" rel="stylesheet" />
-   <script src="js/jquery-1.10.2.min.js"></script>
-   <script src="js/lightbox-2.6.min.js"></script> 
-   <script type="text/javascript"  src="/js/jquery.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Oswald:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="hudba.js" ></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
  
   
 </head>
 <body>
 <div id="back">
 <div id="header">
-      <div id="logo"><img  src="img/logo.png" alt="" /></div>
+      <div id="logo"><img  src="img/logo.png" alt="" /></div> 
       <div id="menu">
 	  <ul>
         <li><a href="#">O hre</a></li>
@@ -29,13 +28,7 @@
 								</ul>
 								</li>
         <li><a href="#">HUDBA</a></li>
-		<li><a href="#">fotky</a><ul>
-									<li><a href="#">Divadlo Andreja bagara</a></li>
-									<li><a href="#">tanec - nácvik</a></li>
-									<li><a href="#">Hlavne postavy</a></li>
-									<li><a href="#">Hlavne postavy</a></li>
-									<li><a href="#">Hlavne postavy</a></li>
-								</ul></li>
+		<li><a href="#">fotky</a></li>
 		<li><a href="#">FILMY</a></li>
         <li><a href="#">ankety</a></li>
       </ul>
@@ -43,13 +36,32 @@
 	  </div>
     </div>
 </div>
-  <div id="wrapper" >
+  <div id="wrapper">
     
-    <div id="content" >
+    <div id="content" white='no'>
       <ul id='playlist'>
-	  <li>Boží blázon</li>
-	  <li>Granada</li>
-	  <li>Odpusť nám</li>
+	  <li>Boží blázon<div id='decoration'>
+				<img src="fotky/66.jpg">
+				<div id='autor'>Spev: sr. lydia
+				</div>
+				<div id='spev'>Juan de dios
+				</div>
+			</div>
+			<a href="audio/bozi_blazon.mp3">stiahnut</a></li>
+	  <li>Granada<div id='decoration'>
+				<img src="fotky/66.jpg">
+				<div id='autor'>Spev: sr. lydia
+				</div>
+				<div id='spev'>Juan de dios
+				</div>
+			</div><a href="audio/bozi_blazon.mp3">stiahnut</a></li>
+	  <li>Odpusť nám<div id='decoration'>
+				<img src="fotky/66.jpg">
+				<div id='autor'>Autor: sr. lydia
+				</div>
+				<div id='spev'>Spev: Juan de dios
+				</div>
+			</div><a href="audio/bozi_blazon.mp3">stiahnut</a></li>
 	  <li>Otčenás z predstavenia</li>
 	  <li>Otčenáš</li>
 	  <li>Trubadúr - Aj keď slnko</li>
@@ -58,24 +70,27 @@
 	  <li>Trubadúr - Túlať sa</li>
 	  <li>Záchrana</li>
 	  </ul>
-	  <div id='decoration'>
-				<div id='autor'>ghhhhhhhhhhhhhhhhhhhhhhh
-				</div>
-				<div id='spev'>vvvvvvvvv
-				</div>
-			</div><div class='clear'></div>
-		<audio controls>
-  <source src="audio/bozi_blazon.ogg" type="audio/ogg">
-  <source src="audio/bozi_blazon.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+	  <div class='clear'></div>
+	<script type="text/javascript">document.getElementById('content').appendChild(window.p)</script>	
 	  
 	  
 	  
   </div>
-  <div id="back1"><div id="footer"><div class='gradient'> <img src="img/gcm_logo.png" style="position: absolute; top: -20px; left: 0px" > <div style="padding-left: 60px; float: left; font-family: moje-reg; font-size:1.2em">Gymnázium sv. Cyrila a Metoda - Spojená katolícka škola v Nitre  |  2013</div></div>
+  <div id="back1">
+		<div id="footer">
+			<div class="gradient"> <img src="img/gcm_logo.png" style="position: absolute; top: -20px; left: 0px" > 
+				<div style="padding-left: 60px; float: left; font-family: moje-reg; font-size:1.2em">
+				Gymnázium sv. Cyrila a Metoda - Spojená katolícka škola v Nitre  |  2013
+				</div>
+				<div id='audio'>
+					<div id='audio_back'></div>
+					<div id='description'>"Trubadur"</div>
+					<div id='go'></div>
+					<div id='mute'></div>
+				</div>
+			</div>
   
   </div>
+  </div>
 </body>
-
 </html>
