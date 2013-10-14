@@ -274,13 +274,13 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 		margin: 0 auto;
 		}
 #slidesw #slides {width:1900%;
-				margin-left:-1100%;
+				margin-left:-0%;
 				
 				
 			}
 #slides >div{float:left;
 			width:5.26315789%;
-			height:464px;
+			/*height:464px;*/
 			text-align:justify;
 			}
 #slides >div img{width:75%;
