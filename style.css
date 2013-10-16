@@ -269,13 +269,13 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 		}
 #slidesw{
 		width:100%;
-		height:646px;
+		
 		overflow-x:hidden;
 		overflow-y:hidden;
 		margin: 0 auto;
 		}
 #slidesw #slides {width:1900%;
-				margin-left:-0%;
+				margin-left:-00%;
 				
 				
 			}
@@ -283,6 +283,7 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 			width:5.26315789%;
 			/*height:464px;*/
 			text-align:justify;
+			background-color:rgba(255,255,255,.5);
 			}
 #slides >div img{width:75%;
 			box-shadow: 0 0 10px black;
@@ -291,21 +292,30 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 			position:relative;}
 
 #slides >div #text{padding:2%;
-				background-color:rgba(0,0,0,.5);
+				
 				color:white;
 				min-height:420px;/*toto treba pri zmen8ch rozlisenia upravit*/}
 #slider {width:100%;
 		height: 60px;
-		background-color:rgba(0,0,0,.5);
+		background-color:rgba(255,255,255,.5);
 		position:relative;
-		margin: 1% 0;}
+		margin: 1% 0 0;}
 
 #slider #gutter1{margin:5px 5%;
 				box-shadow: 0 0 5px black inset;
 				height:10px;
 				border-radius:5px;
-				background-color: white;
-				position:relative;}
+				background-color: black;
+				position:relative;
+				
+				}
+#slider {height:120px}				
+#slider #gutter1 div div{display:none;}
+#slider:hover #gutter1 div div{display:block;
+							position:absolute;
+							background-color:white;
+							border:1px solid black;
+							}
 	#handle1			{
 	position: absolute;
 	top: -5px;
