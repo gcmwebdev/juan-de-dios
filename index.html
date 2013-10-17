@@ -44,7 +44,7 @@
 	<div id='slider'>
 		<div><span style="font-size:0;">.</span></div>
 		<div id="gutter1"><div id='handle1'></div>
-				    <div>
+				    <div id='desc'>
 					<div style='left:0%'>úvod</div>
 					<div style='left:5.5555%'>šibal Juan</div>
 					<div style='left:11.1111%'>starosti o matku</div>
@@ -169,7 +169,39 @@
 			Dej vrcholí pri záchrane pacientov z horiacej nemocnice. Niet nikoho okrem Juana, kto by sa odvážil do nej vstúpiť. A vtedy sa blázon v očiach Granaďanov mení na svätca, pretože iba ten, kto sám horí ohňom, môže vstúpiť doň bez toho, aby mu oheň ublížil. Juan zachraňuje všetkých chorých, a tak víťazí nielen nad ohňom, ale i nad samým sebou, uvedomujúc si, že skutočným víťazom v živote každého človeka je Boží syn, ktorého ranami my všetci sme uzdravení. </div>
 		</div>
 	</div>
-  </div> 
+  </div>
+  <script type='text/javascript'>$( document ).ready(function(){
+												/*optimalizacia nacitavania obrazkov*/
+												function nacitaj(element){var x=document.createElement('img');x.src=element.href;
+																	var y=element.parentNode;
+																y.removeChild(element);
+																y.insertBefore(x, y.getElementsByTagName('div')[0]);
+																if($(y).next()){
+																				y.onload=function(){nacitaj($(y).next().find('a')[0])}
+																               
+																			   }
+																
+																}
+												nacitaj($('#slides a')[0]);
+												$('#gutter1').slider({
+												  value: 0,
+												  step: 1,
+												  orientation: "horizontal",
+												  range: "min",
+												  max: 18, 
+												  animate: true,					
+												  slide: function() {							
+													manualSeek = true;
+												  },
+												  stop:function(e,ui) {
+													manualSeek = false;					
+													$('#handle1').animate({'left':(ui.value*5.55555)+'%'},500);
+													$('#slides').animate({'margin-left':(-ui.value*100)+'%'},500);
+													
+													
+												  }
+												});
+																});</script>
   </div>
   </div>
   <div id="back1">
