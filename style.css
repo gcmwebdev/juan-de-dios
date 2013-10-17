@@ -303,7 +303,7 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 		position:relative;
 		margin: 1% 0 0;}
 
-#slider #gutter1{margin:47px 5%;
+#slider #gutter1{margin:-5px 5% 0;
 				box-shadow: 0 0 5px black inset;
 				height:10px;
 				border-radius:5px;
@@ -312,9 +312,13 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 				font-size:10px;
 				
 				}
-#slider {height:140px; }				
-#slider #gutter1 div#desc div{display:block;}
-#slider #gutter1 div#desc div{display:block;
+#slider:hover #gutter1{margin:47px 5%;}
+#slider {height:40px;
+	}	
+#slider:hover{height:140px; }	
+#slider #gutter1 div#desc div{display:none}	
+#slider:hover #gutter1 div#desc div{display:block;}
+#slider #gutter1 div#desc div{
 							position:absolute;
 							background-color:rgba(255,255,255,0.5);
 							border:1px solid black;
