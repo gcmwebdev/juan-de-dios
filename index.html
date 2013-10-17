@@ -177,7 +177,7 @@
 																y.removeChild(element);
 																y.insertBefore(x, y.getElementsByTagName('div')[0]);
 																if($(y).next()){
-																				y.onload=function(){nacitaj($(y).next().find('a')[0])}
+																				x.onload=function(){nacitaj($(y).next().find('a')[0]);alert('udalost');}
 																               
 																			   }
 																
