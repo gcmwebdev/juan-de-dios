@@ -98,7 +98,7 @@ img{border:0}
 			width:100%;
 			height:100%;
 			}
-#header >div >ul > li>a:hover{background-color:rgba(0,0,0,0.5)}			
+#header >div >ul > li:hover>a{background-color:rgba(0,0,0,0.5)}			
 #header >div>ul > li{float:left;
 			width:14%;
 			font-size: 3.0em;
@@ -114,13 +114,14 @@ img{border:0}
 						color: white;
 						
 						}
-#header div >ul > li > ul > li > a{padding: 5px 20px;
+#header div >ul > li > ul > li > a{padding: 1% 3%;
 						text-decoration:none;
 			text-transform:uppercase;
 			font-family:  'Oswald',​ Arial,​ sans-serif;
 			font-weight:300;
 			color:white;
 			display:inline-block;
+			width:94%;
 			
 						
 						}
@@ -310,6 +311,7 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 				background-color: black;
 				position:relative;
 				font-size:10px;
+				cursor:pointer;
 				
 				}
 #slider:hover #gutter1{margin:47px 5%;}
