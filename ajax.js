@@ -29,7 +29,7 @@ $(document).ready(function(){
 						 eval(xmlDoc.substring(xmlDoc.indexOf(start)+start.length,xmlDoc.indexOf(end)));
 						 $('#wrapper').fadeOut(0);
 						 $('#wrapper').fadeIn(500);
-						 history.pushState(stateObj, "page 2", "bar.html");
+						 
 						}
 					history.pushState({foo:'xxxx'}, 'stranka x', this.href);
 					}
