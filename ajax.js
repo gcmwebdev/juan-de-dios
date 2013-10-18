@@ -1,6 +1,7 @@
 $(document).ready(function(){
 				$('a.ajax').click(function(){
 				$('#wrapper').fadeOut(0);
+				var adresa =this.href;
 				var xmlhttp;
 				if (window.XMLHttpRequest)
 				  {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -31,7 +32,7 @@ $(document).ready(function(){
 						 $('#wrapper').fadeIn(500);
 						 
 						}
-					history.pushState({foo:'xxxx'}, 'stranka x', this.href);
+					history.pushState({foo:'xxxx'}, 'stranka x', adresa);
 					}
 				  }
 				xmlhttp.open("GET", this.href ,true);
