@@ -516,10 +516,10 @@ ul#playlist li {display:block;
 			padding:10px;
 			cursor:pointer;
 			}
-ul#playlist li:hover #decoration{display:block;}
+ul#playlist li:hover .decoration{display:block;}
 ul#playlist li:nth-child(2n){background-color:rgba(255,255,255,0.5);color:black;}
 ul#playlist  a{display:block; float:right;}
-ul#playlist #decoration {width:200%;
+ul#playlist .decoration {width:200%;
 						left:-200%;
 						position:absolute;
 						height:100%;
@@ -528,14 +528,14 @@ ul#playlist #decoration {width:200%;
 						display:none;
 						
 						}
-ul#playlist #decoration  img{width:100%;}
-ul#playlist #decoration  #autor{width:100%; 
+ul#playlist .decoration  img{width:100%;}
+ul#playlist .decoration  .autor{width:100%; 
 								position:absolute;
 								top:0;
 								color:white;
 								text-align:center;
 								}
-ul#playlist #decoration  #spev{width:80%; 
+ul#playlist .decoration  .spev{width:80%; 
 								position:absolute;
 								top:30px;
 								color:white;
