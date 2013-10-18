@@ -1,4 +1,4 @@
-var hudba=Array(['Boží blázon',"bozi_blazon"],['Granada',"granada"],['Odpust',"odpust_nam"],['Otčenáš',"otcenas"],['Otčenáš z predstaveni',"otcenas_z_predstavenia"],['Trubadúr- Aj keď slnko',"trubadur_aj_ked_slnko"],['Trubadúr- Juana čakala',"trubadur_juana_cakala"],['Trubadúr- No život',"trubadur_no_zivot"],['Trubadúr- Túlať sa',"trubadur_tulat_sa"],['Záchrana',"zachrana"],['Záchrana s textom',"zachrana_s_textom"])
+var hudba=Array(['Boží blázon',"bozi_blazon"],['Granada',"granada"],['Odpust',"odpust_nam"],['Otčenáš',"otcenas"],['Otčenáš z predstavenia',"otcenas_z_predstavenia"],['Trubadúr- Aj keď slnko',"trubadur_aj_ked_slnko"],['Trubadúr- Juana čakala',"trubadur_juana_cakala"],['Trubadúr- No život',"trubadur_no_zivot"],['Trubadúr- Túlať sa',"trubadur_tulat_sa"],['Záchrana',"zachrana"],['Záchrana s textom',"zachrana_s_textom"])
 /*insert audio element */
 var mute=0;
 var aktual=0;
