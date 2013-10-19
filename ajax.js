@@ -1,5 +1,8 @@
 $(document).ready(function(){
-				$('a.ajax').click(function(){
+				ajaxInit=function (){$('a.ajax').click(function(){
+				$('a.ajax').each(function(){$( this ).removeClass( "active" );});
+				$(this).addClass('active');
+				
 				$('#wrapper').fadeOut(0);
 				var adresa =this.href;
 				var xmlhttp;
@@ -39,7 +42,8 @@ $(document).ready(function(){
 				
 				xmlhttp.send();
 				return false;
-				});
+				});}
+				ajaxInit();
 				
 
 });

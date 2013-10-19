@@ -5,6 +5,15 @@ var aktual=0;
 loaded = false,
 manualSeek = false; 
 
+function activateli(){$('ul#playlist li').each(function(){$( this ).removeClass( "active" );
+																var t=$(this).find('a')[0].href;
+																var adresa=(/audio\/([^\.]+)/m).exec(t)[1];
+																if(hudba[aktual][1]==adresa){$(this).addClass('active');}
+																						});
+																
+						
+						
+						}
 
 function change(sourceUrl) {
     var audio = $("audio");      
@@ -55,6 +64,7 @@ $( document ).ready( function(){
 			changedesc();
 			document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 			mute=0;
+			activateli();
 	        })
 			window.p=document.createElement('p');
 			p.innerHTML='<p class="player">\
@@ -78,6 +88,7 @@ $( document ).ready( function(){
 			changedesc();
 			document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 			mute=0;
+			activateli();
 	        })
 								$(audio).bind('timeupdate', function() {
 									
@@ -92,6 +103,8 @@ $( document ).ready( function(){
 										changedesc();
 										document.getElementById('mute').style.backgroundImage='url(img/audio/audio.png)';
 										mute=0;
+										activateli();
+										
 																				
 										}
 										

@@ -98,7 +98,7 @@ img{border:0}
 			width:100%;
 			height:100%;
 			}
-#header >div >ul > li:hover>a{background-color:rgba(0,0,0,0.5)}			
+#header >div >ul > li:hover>a, .ajax.active{background-color:rgba(0,0,0,0.5)}			
 #header >div>ul > li{float:left;
 			width:14%;
 			font-size: 3.0em;
@@ -106,7 +106,7 @@ img{border:0}
 			}
 #header div >ul >li:nth-child(2){width:26%}
 #header div >ul ul {display: none;}
-#header div >ul li:hover ul {display: block;
+#header div >ul li:hover ul  {display: block;
 						position:absolute;
 						background-color: rgba(0,0,0,0.7);
 						list-style:none;
@@ -424,7 +424,7 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 #description{cursor:pointer;}
 /*uvod koniec*/
 /*fotky zac*/
-
+#content.fotky{background-color:transparent;}
 #content.fotky a{width: 25%; 
 				float: left;
 				}
@@ -481,14 +481,20 @@ dl img{position:absolute;left:0;width:100%;z-index:-20;}
 #content table tr:nth-last-child(1) td{border-bottom:0 dotted black;}
 #content table td {text-align:justify;vertical-align:top}
 #content table td img{float:left; margin-right:10px}
-#content table td:hover{background-color:rgba(0,0,0,0.5);
+#content table td a:hover{background-color:rgba(0,0,0,0.5);
                       color:white;
 					  }
+#content table td a{color:black;
+			     text-decoration:none;
+				 display:block;
+				 height:100%;
+				 }
+/*#content table td em{padding:10px;}*/
 /*ankety konkretne*/
 .col1 strong {display:list-item; margin-top:20px;list-style-type:square;}
-.col1 >strong {margin-left:15px;}
+.col1 >strong {margin-left:18px;}
 .col1 strong:first-child{margin-top:0px;}
-.col1 p{margin:0 0px 0 15px;}
+.col1 p{margin:0 0px 0 18px;}
 .col1{
 padding:20px;
 -moz-column-count:3; /* Firefox */
@@ -503,6 +509,9 @@ text-justify:inter-word;
 .col1  strong.odpo{list-style-type:circle;margin-left:30px}
 .col1  ul {margin-left:30px}
 .col1  ul  li{margin-bottom:10px}
+.col1 img{display:block;
+			margin: 10px auto;
+			}
 /*hudba*/
 ul#playlist{
 			width:33.3333%;
@@ -517,11 +526,23 @@ ul#playlist li {display:block;
 			padding:10px;
 			cursor:pointer;
 			}
-ul#playlist li.active {text-shadow:0 0 3px red; font-weight:bold; text-decoration:underline;}
+ul#playlist li.active, ul#playlist li:hover {font-style:italic;}
+ul#playlist li.active:after, ul#playlist li:hover:after{content:'';
+														position:absolute;
+														height:0px;
+														width:0;
+														border-right:25px solid rgba(255,255,255,0.5);
+														border-top:15px solid transparent;
+														border-bottom:15px solid transparent;
+														left:-28px;
+														z-index:3;
+														}
 ul#playlist li.active .decoration{display:block;}
-ul#playlist li:hover .decoration{display:block;}
+ul#playlist li:hover .decoration{display:block;z-index:2;}
 ul#playlist li:nth-child(2n){background-color:rgba(255,255,255,0.5);color:black;}
-ul#playlist  a{display:block; float:right;}
+ul#playlist  a{display:block; float:right;position:relative; width:25px; height:26px;background-repeat:no-repeat}
+ul#playlist  li:nth-child(2n+1) a{background-image:url('img/white.png'); color:white;}
+ul#playlist  li:nth-child(2n) a{background-image:url('img/black.png'); color:white;}
 ul#playlist .decoration {width:200%;
 						left:-200%;
 						position:absolute;
@@ -534,13 +555,13 @@ ul#playlist .decoration {width:200%;
 ul#playlist .decoration  img{width:100%;}
 ul#playlist .decoration  .autor{width:100%; 
 								position:absolute;
-								top:0;
+								top:20px;
 								color:white;
 								text-align:center;
 								}
 ul#playlist .decoration  .spev{width:80%; 
 								position:absolute;
-								top:30px;
+								top:40px;
 								color:white;
 								text-align:center;
 								background-color:rgba(255,255,255,0.5);
