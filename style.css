@@ -289,10 +289,10 @@ background-image: linear-gradient(to bottom, rgba(255, 247, 247, 0) 0%, #ffffff 
 #slides >div img,#slides >div iframe{width:75%;
 			box-shadow: 0 0 10px black;
 			float:right;
-			margin-left:2%;
-			position:relative;margin:0.5%;}
+			margin-left:1%;
+			position:relative;margin:1%;}
 
-#slides >div #text{padding:2%;
+#slides >div #text{padding:1%;
 				
 				color:black;
 				min-height:420px;/*toto treba pri zmen8ch rozlisenia upravit*/}
