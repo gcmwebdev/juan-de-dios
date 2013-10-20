@@ -107,8 +107,10 @@ $( document ).ready( function(){
 										
 																				
 										}
-										
-							  timeleft.textContent='-' + mins + ':' + (secs > 9 ? secs : '0' + secs);
+							  if(!isNaN(mins))	{	
+							  timeleft.textContent='-' + mins + ':' + (secs > 9 ? secs : '0' + secs);}
+							  else {timeleft.textContent='--:--';}
+							  
 							  if (!manualSeek) { positionIndicator.style.left=pos + '%'; }
 							  if (!loaded) {
 								loaded = true;
