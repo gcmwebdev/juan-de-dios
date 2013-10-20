@@ -3,9 +3,9 @@ $(document).ready(function(){
 				$('a.ajax').each(function(){$( this ).removeClass( "active" );});
 				$(this).addClass('active');
 				
-				$('#wrapper').fadeOut(0);
+				
 				/*loading icon*/
-				$('#wrapper').get(0).innerHTML='<div id="content"><div class="loading"></div> </div>';
+				$('#wrapper').get(0).innerHTML='<div id="content" white="no"><div class="loading"></div> </div>';
 				var adresa =this.href;
 				var xmlhttp;
 				if (window.XMLHttpRequest)
