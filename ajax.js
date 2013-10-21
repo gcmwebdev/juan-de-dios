@@ -1,3 +1,4 @@
+push=0;
 $(document).ready(function(){
 				ajaxInit=function (selector){$(selector).click(function(e){
 				$('a.ajax').each(function(){$( this ).removeClass( "active" );});
@@ -38,6 +39,7 @@ $(document).ready(function(){
 						 
 						}
 					history.pushState({foo:'xxxx'}, 'stranka x', adresa);
+					push=1;
 					}
 				  }
 				xmlhttp.open("GET", this.href ,true);
@@ -50,6 +52,8 @@ $(document).ready(function(){
 				/*history*/
 				
 				window.onpopstate=function(e){
+				if(!push) { return;}
+				var popped = ('state' in window.history)
 				$('a.ajax').each(function(){$( this ).removeClass( "active" );
 											if(this.href==document.location){$(this).addClass('active')}; 
 											});
