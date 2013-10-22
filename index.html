@@ -37,7 +37,8 @@
 									<li><a href="klip_tanec_ohen.html" class='ajax'>Tanec oheň</a></li>
 									
 								</ul></li>
-        <li><a href="ankety.html" class='ajax'>ankety</a></li>
+        <li><a href="ankety.html" class='ajax'>ankety</a></li><li><a href="dvd.html" class='ajax'>DVD</a></li>
+		
       </ul>
 	  <div id="flag"></div>
 	  </div>
@@ -53,24 +54,24 @@
 		<div id="gutter1"><div id='handle1'></div>
 				    <div id='desc'>
 					<div style='left:0%'>úvod</div>
-					<div style='left:5.5555%'>šibal Juan</div>
-					<div style='left:11.1111%'>starosti o&nbsp;matku</div>
-					<div style='left:16.6666%'>Príchod Antonina Melra</div>
-					<div style='left:22.2222%'>Odchod do španielsa</div>
-					<div style='left:27.7777%'>opustený Juan</div>
-					<div style='left:33.3333%'>smrť matky</div>
-					<div style='left:38.8888%'>Juana nájde seňor Francisco</div>
-					<div style='left:44.4444%'>Juan odchádza bojovať</div>
-					<div style='left:50%'>zjavenie matky</div>
-					<div style='left:55.55%'>zjavenie Panny Márie</div>
-					<div style='left:61.1111%'>návrat Juana k&nbsp;Franciscovi</div>
-					<div style='left:66.6666%'>odmietnutie Beatriz</div>
-					<div style='left:72.2222%'>odchod do Granady</div>
-					<div style='left:77.7777%'>Juan prosí o&nbsp;zmilovanie</div>
-					<div style='left:83.3333%'>Juan sa stará o&nbsp;žobrákov</div>
-					<div style='left:88.8888%'>Odpúšťa zomierajucemu Antoninovi</div> 
-					<div style='left:94.4444%'>zachraňuje chorých od&nbsp;ohňa</div>
-					<div style='left:100%'>Možnosť kúpy DVD</div>
+					<div style='left:5.8823529%'>šibal Juan</div>
+					<div style='left:11.7647%'>starosti o&nbsp;matku</div>
+					<div style='left:17.6470%'>Antonio Melro</div>
+					<div style='left:23.5294%'>odchod do&nbsp;Španielsa</div>
+					<div style='left:29.41176%'>studňa</div>
+					<div style='left:35.2941%'>smrť matky</div>
+					<div style='left:41.1764%'>seňor Francisco</div>
+					<div style='left:47.058823%'>vojna</div>
+					<div style='left:52.941176%'>zjavenie matky</div>
+					<div style='left:58.823529%'>zachrana</div>
+					<div style='left:64.705882%'>návrat</div>
+					<div style='left:70.58823%'>Beatriz</div>
+					<div style='left:76.47058%'>Granada</div>
+					<div style='left:82.352941%'>blázon</div>
+					<div style='left:88.23529%'>žobráci</div>
+					<div style='left:94.11764%'>odpustenie</div> 
+					<div style='left:100%'>oheň</div>
+					
 					</div>
 			</div>
 		
@@ -179,7 +180,7 @@
 		</div>
 		<div>
 			<a href="komiks/18.jpg"> komiks sa načítava</a> <div id='text'>
-			DVD si môžete zakúpiť a tým podporiť školu u&nbsp;sr. Maria Marhthe na&nbsp;tel. čísle xxxxxxxxxx. cena dvd je 5 eur. </div>
+			DVD si môžete zakúpiť a tým podporiť školu u&nbsp;sr. Maria Marhthe na&nbsp;tel. čísle 0902746853. cena dvd je 5 eur. </div>
 		</div>
 	</div>
   </div>
@@ -199,12 +200,12 @@
 																
 																}
 												nacitaj($('#slides a')[0]);
-												$('#left1').click(function(){if(index==0){index=19;}
+												$('#left1').click(function(){if(index==0){index=18;}
 																			index--;
 																			$('#handle1').animate({'left':(index*5.55555)+'%'},500);
 																			$('#slides').animate({'margin-left':(-index*100)+'%'},500);
 																			$('#gutter1').focus();})
-												$('#right1').click(function(){if(index==18){index=-1;}
+												$('#right1').click(function(){if(index==17){index=-1;}
 																			index++;
 																			$('#handle1').animate({'left':(index*5.55555)+'%'},500);
 																			$('#slides').animate({'margin-left':(-index*100)+'%'},500);
@@ -214,14 +215,14 @@
 												  step: 1,
 												  orientation: "horizontal",
 												  range: "min",
-												  max: 18, 
+												  max: 17, 
 												  animate: true,					
 												  slide: function() {							
 													manualSeek = true;
 												  },
 												  stop:function(e,ui) {
 													manualSeek = false;					
-													$('#handle1').animate({'left':(ui.value*5.55555)+'%'},500);
+													$('#handle1').animate({'left':(ui.value*5.8823529)+'%'},500);
 													$('#slides').animate({'margin-left':(-ui.value*100)+'%'},500);
 													index= ui.value;
 													
