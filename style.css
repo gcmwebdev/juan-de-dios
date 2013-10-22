@@ -377,6 +377,18 @@ vertical-align:top;}
 	background: url(img/player.png) no-repeat -65px -5px;
 	cursor: pointer;
 	z-index:2;}
+#cisla {float:right;
+		clear:right;
+		width:700px;
+		margin: 1%; 
+		text-align:center;
+		background-color:rgba(255,255,255,.3); 
+		box-shadow: 0 0 5px black; 
+		font-size: 1.5em; 
+		padding:5px 0;
+		margin-top:1px}
+#cisla  ul {padding-left:40px; text-align:left;font-size:20px}
+#cisla  ul li{list-style-type: square;margin: 5px 0; }
 #left1{position: absolute;
         height: 46px;
 		width:50px;
