@@ -310,7 +310,7 @@ vertical-align:top;}
 		background: -moz-linear-gradient(top, rgba(255,255,255,.5), transparent);
 		background: linear-gradient(top, rgba(255,255,255,.5),transparent );;
 		position:relative;
-		margin: 1% 0 0;}
+		}
 
 #slider #gutter1{margin:-5px 5% 0;
 				box-shadow: 0 0 5px black inset;
