@@ -394,7 +394,7 @@ vertical-align:top;}
         height: 46px;
 		width:50px;
 		background-image: url('img/prev.png');
-		top:30%;
+		top:250px;
 		left:-60px;
 		cursor:pointer;
 		transition: transform 0.5s;
@@ -403,7 +403,7 @@ vertical-align:top;}
         height: 46px;
 		width:50px;
 		background-image: url('img/next.png');
-		top:30%;
+		top:250px;
 		right:-60px;
 		cursor:pointer;
 		transition: transform .5s;}
