@@ -210,12 +210,24 @@
 												nacitaj($('#slides a')[0]);
 												$('#left1').click(function(){if(index==0){index=18;}
 																			index--;
-																			$('#handle1').animate({'left':(index*5.8823529)+'%'},500);
+																			$('#handle1').animate({'left':(index*5.8823529)+'%'},500,function(){if(index==0)
+																															{$('#slidesw div #text').get(0).style.display='block';
+																															$('#slidesw div #cisla').get(0).style.display='block';}
+																															else
+																															{$('#slidesw div #text').get(0).style.display='none';
+																															$('#slidesw div #cisla').get(0).style.display='none'; }
+																																					});
 																			$('#slides').animate({'margin-left':(-index*100)+'%'},500);
 																			$('#gutter1').focus();})
 												$('#right1').click(function(){if(index==17){index=-1;}
 																			index++;
-																			$('#handle1').animate({'left':(index*5.8823529)+'%'},500);
+																			$('#handle1').animate({'left':(index*5.8823529)+'%'},500,function(){if(index==0)
+																															{$('#slidesw div #text').get(0).style.display='block';
+																															$('#slidesw div #cisla').get(0).style.display='block';}
+																															else
+																															{$('#slidesw div #text').get(0).style.display='none';
+																															$('#slidesw div #cisla').get(0).style.display='none'; }
+																																					});
 																			$('#slides').animate({'margin-left':(-index*100)+'%'},500);
 																			$('#gutter1').focus();})
 												$('#gutter1').slider({
@@ -230,7 +242,13 @@
 												  },
 												  stop:function(e,ui) {
 													manualSeek = false;					
-													$('#handle1').animate({'left':(ui.value*5.8823529)+'%'},500);
+													$('#handle1').animate({'left':(ui.value*5.8823529)+'%'},500, function(){if(index==0)
+																															{$('#slidesw div #text').get(0).style.display='block';
+																															$('#slidesw div #cisla').get(0).style.display='block';}
+																															else
+																															{$('#slidesw div #text').get(0).style.display='none';
+																															$('#slidesw div #cisla').get(0).style.display='none'; }
+																																					});
 													$('#slides').animate({'margin-left':(-ui.value*100)+'%'},500);
 													index= ui.value;
 													
