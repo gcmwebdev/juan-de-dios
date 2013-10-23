@@ -21,6 +21,7 @@ $(document).ready(function(){
 				  {
 				  if (xmlhttp.readyState==4)
 					{
+					if(xmlhttp.status == 503 || xmlhttp.status == 404){location.reload();}
 					xmlDoc=(xmlhttp.responseText);
 					var title=(/<title>([^<]+)<\/title>/m).exec(xmlDoc)[1];
 					document.title=title;
@@ -72,6 +73,7 @@ $(document).ready(function(){
 				  {
 				  if (xmlhttp.readyState==4)
 					{
+					if(xmlhttp.status == 503 || xmlhttp.status == 404){location.reload();}
 					xmlDoc=(xmlhttp.responseText);
 					var title=(/<title>([^<]+)<\/title>/m).exec(xmlDoc)[1];
 					document.title=title;
