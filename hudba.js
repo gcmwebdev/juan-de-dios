@@ -33,7 +33,7 @@ $( document ).ready( function(){
 	
 	if(!!document.createElement('audio').canPlayType) {
 
-	  var player = '<audio preload="none">\
+	  var player = '<audio>\
 		  <source id="ogg_src" src="audio/'+hudba[0][1]+'.ogg" type="audio/ogg"></source>\
 		  <source id="wav_src" src="audio/'+hudba[0][1]+'.mp3" type="audio/mpeg"></source>\
 		  <source id="mp3_src" src="audio/'+hudba[0][1]+'.wav" type="audio/x-wav"></source>\
