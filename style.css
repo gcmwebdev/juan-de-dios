@@ -288,5 +288,24 @@ text-justify:inter-word;
 				
 				}
 
+#content.fotky:hover  img{
+
+    
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    -webkit-transition: all .6s ease; /* Fade to color for Chrome and Safari */
+    -webkit-backface-visibility: hidden; /* Fix for transition flickering */
 
 
+				}
+#content.fotky img:hover{
+
+
+    -webkit-filter: grayscale(0%);
+}
+/*dab posledna foto*/
+#content.fotky a.dab{position: relative; top:-231px; left:275px;}
+/*fotky tanec posledne dve*/
+#content.fotky a.none, #content.fotky a.none{width: 25%; position:relative; top: 0px;
+				
+				}
